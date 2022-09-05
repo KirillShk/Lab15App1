@@ -1,0 +1,165 @@
+﻿<Window x:Class="Lab15App1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15App1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentReader x:Name="Boxing" Background="#FFAD3838" >
+            <FlowDocument>
+                <Paragraph FontFamily="Bahnschrift" FontSize="20" FontWeight="Bold" Foreground="DarkBlue">
+                    История возникновения и развития бокса
+                </Paragraph>
+                <Paragraph>
+                    История бокса насчитывает не одну тысячу лет. Разного рода упоминания о кулачных боях встречаются в Египте 
+                    (изображения на фресках), а также на минойских и шумерских рельефах. По одним данным первые находки 
+                    датированы 4000 лет до н.э., по другим 7000 лет до н.э. Принято считать, что спортивным видом единоборств
+                    бокс стал в 688 году до н.э., после того как был включен в программу античных Олимпийских игр. 
+                    Родина современного бокса – Англия (начало XVII века).
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="150" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/James.jpg" Height="100" HorizontalAlignment="Right"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    Основателем и первым чемпионом по боксу принято считать Джеймса Фигга.
+                    Что интересно, до того как заняться боксом
+                    Джеймс был известным фехтовальщиком. Позже он открыл академию бокса и начал обучать всех желающих искусству 
+                    рукопашного боя.
+                </Paragraph>
+                <Paragraph Foreground="#FFE80F0F" FontWeight="Bold">
+                    Краткие правила бокса
+                </Paragraph>
+                <Paragraph>
+                    Боксерский поединок разделен на раунды, каждый из которых  длится от 3 до 5 минут, 
+                    в зависимости от уровня поединка (любительский или профессиональный). 
+                    Между раундами у боксеров есть 1 минута для отдыха.
+                    Боксерский поединок заканчивается в следующих случаях: 
+                </Paragraph>
+                <List MarkerStyle="Circle">
+                    <ListItem>
+                        <Paragraph>
+                            один из спортсменов сбит с ног и не сможет подняться в течение 10 секунд; 
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            после третьего нокдауна (правило действует в титульных боях под эгидой WBA); 
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            один из спортсменов получил травму и не может защищаться (технический нокаут); 
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph Foreground="#FFE80F0F">
+                    Основные удары в боксе
+                </Paragraph>
+                <Section FontFamily="Bahnschrift Light" >
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.7*"/>
+                        <TableColumn Width="2*"/>
+                        <TableColumn Width="*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Удар
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Описание
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Изображение
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Прямой (Джеб)
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Представляет собой акцентированное прямое движение в сторону головы или корпуса. 
+                                    Его отличительной особенностью является отсутствие размаха и короткая амплитуда.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <Image Source="Data/Прямой.jpg" Height="100" HorizontalAlignment="Right"/>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Боковой (Хук)
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Резкое боковое движение в сторону противника. В данном случае рука находится в согнутом положении.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <Image Source="Data/Боковой.jpg" Height="100" HorizontalAlignment="Right"/>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Апперкот
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Осуществляется согнутой рукой снизу
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <Image Source="Data/Апперкот.jpg" Height="100" HorizontalAlignment="Right"/>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                </Section>
+                <Paragraph>
+                    <Hyperlink NavigateUri="http://ru.sport-wiki.org/vidy-sporta/boks/">Источник</Hyperlink>
+                </Paragraph>
+                <BlockUIContainer>
+                    <Button> 
+                        <StackPanel>
+                            <Image Source="Data/Logo.png" Width="50"/>
+                            <TextBlock>Нравится</TextBlock> 
+                        </StackPanel>
+                    </Button>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="150" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="150"  Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="150" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
